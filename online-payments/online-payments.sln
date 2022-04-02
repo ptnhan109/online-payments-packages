@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momo.Payment", "Momo.Payment\Momo.Payment.csproj", "{7447D946-2D2E-483F-B808-F87C0F21DB92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayPal.Payment", "PayPal.Payment\PayPal.Payment.csproj", "{5B20730B-3A60-4CAD-BF26-FE52839C7F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C3E11AF9-8CC1-4E73-A256-EF685759BD43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7447D946-2D2E-483F-B808-F87C0F21DB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7447D946-2D2E-483F-B808-F87C0F21DB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7447D946-2D2E-483F-B808-F87C0F21DB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7447D946-2D2E-483F-B808-F87C0F21DB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B20730B-3A60-4CAD-BF26-FE52839C7F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B20730B-3A60-4CAD-BF26-FE52839C7F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B20730B-3A60-4CAD-BF26-FE52839C7F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B20730B-3A60-4CAD-BF26-FE52839C7F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E11AF9-8CC1-4E73-A256-EF685759BD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E11AF9-8CC1-4E73-A256-EF685759BD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E11AF9-8CC1-4E73-A256-EF685759BD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E11AF9-8CC1-4E73-A256-EF685759BD43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5D2B600-4ACB-4A6A-9864-25E6B11CF981}
+	EndGlobalSection
+EndGlobal
