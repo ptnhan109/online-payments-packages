@@ -5,6 +5,7 @@ using Momo.Payment.Requests;
 using Momo.Payment.Responses;
 using Momo.Payment.Urls;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -49,8 +50,9 @@ namespace Momo.Payment
             bodyRequest.Signature = GenerateSignature(_options.MomoCredential.AccessKey, bodyRequest.Amount.ToString(),
                 bodyRequest.ExtraData, bodyRequest.IpnUrl, bodyRequest.OrderId, bodyRequest.OrderInfo,
                 bodyRequest.PartnerCode, bodyRequest.RedirectUrl, bodyRequest.RequestId, bodyRequest.RequestType);
-
-            string body = JsonConvert.SerializeObject(bodyRequest);
+            var serializerSettings = new JsonSerializerSettings();
+            serializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            string body = JsonConvert.SerializeObject(bodyRequest,serializerSettings);
             var requestModel = new WebRequestModel()
             {
                 BodyJson = body,
