@@ -4,6 +4,7 @@ using Momo.Payment;
 using Momo.Payment.Interfaces;
 using Momo.Payment.Models;
 using Momo.Payment.Requests;
+using Momo.Payment.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +24,11 @@ namespace test.Controllers
         }
 
         [HttpPost]
-        public Task<IActionResult> IpnMomo(MomoPaymentWebookRequest request)
+        public async Task<IActionResult> IpnMomo(MomoPaymentWebookRequest request)
         {
-            throw new NotImplementedException();
+            await Task.Yield();
+            var result = new MomoPaymentWebhookResponse();
+            return Ok(result);
         }
 
         [HttpGet]
